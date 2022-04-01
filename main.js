@@ -90,7 +90,7 @@ function obtenerUnicornios(){
 //const contenedorUnicornio = document.querySelector('#lista');
 // MOSTRAR UNICORNIOS
 function mostrarUnicornios(arrayUnicornios){
-    //contenedorUnicornio.innerHTML = '';
+    contenedorUnicornio.innerHTML = '';
     //arrayUnicornios = arrayUnicornios.reverse();
     arrayUnicornios.forEach((unicorn) => {
         const li = document.createElement('li');
@@ -154,7 +154,7 @@ function modificarUnicornio(id_unicorn){
         return result.json();
     })
     .then((result) => {
-        console.log(result);
+        obtenerUnicornios();
     })
     .catch((err) => {
         console.log(err);
@@ -172,7 +172,7 @@ function eliminarUnicornio(id_unicorn){
         return result.json();
     })
     .then((result) => {
-        console.log(result);
+        obtenerUnicornios();
     })
     .catch((err) => {
         console.log(err);
