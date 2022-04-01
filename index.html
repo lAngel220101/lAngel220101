@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project-Consumo API</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>ESTABLO DE UNICORNIOS</h1>
+  </header>
+  <main>
+    <div class="contenedor-p">
+        <div class="grid">
+            <div class="nested-grid">
+                <h2>AGREGAR UNICORNIO AL ESTABLO</h2>
+                <div class="campo">
+                  <label for="name">NOMBRE</label><br>
+                  <input type="text" id="a_name" class="input" placeholder="Agrega Nombre" required>
+                </div>
+                <div class="campo">
+                  <label for="name">PODER</label><br>
+                  <input type="text" id="a_power" class="input" placeholder="Agrega Poder" required>
+                </div>
+                <div class="campo">
+                  <label for="name">FOTO</label><br>
+                  <input type="textl" id="a_image" class="input" placeholder="Agrega url de foto .jpg o .png" required>
+                </div>
+                <div class="campo">
+                  <label for="name">EDAD</label><br>
+                  <input type="text" id="a_age" class="input" placeholder="Agrega Edad - Opcionl">
+                </div>
+                <button type="button" class="extended" id="btn_crear">Agregar</button>
+            </div>
+
+            <div class="nested-grid">
+                <h2>MODIFICAR UN UNICORNIO</h2>
+                <h4>PARA MODIFICAR UN UNICORNIO, PRIMERO DEBES SELECCIONARLO</h4>
+                <div class="campo">
+                    <h4>Vas a modificar datos de: </h4>
+                    <p id="nameUnicornio"></p>
+                </div>
+                <div class="campo">
+                  <label for="name">NOMBRE</label><br>
+                  <input type="text" id="mod_name" class="input" placeholder="Agrega Nombre" required>
+                </div>
+                <div class="campo">
+                  <label for="name">PODER</label><br>
+                  <input type="text" id="mod_power" class="input" placeholder="Agrega Poder" required>
+                </div>
+                <div class="campo">
+                  <label for="name">FOTO</label><br>
+                  <input type="textl" id="mod_image" class="input" placeholder="Agrega url de foto .jpg o .png" required>
+                </div>
+                <div class="campo">
+                  <label for="name">EDAD</label><br>
+                  <input type="text" id="mod_age" class="input" placeholder="Agrega Edad - Opcionl">
+                </div>
+                <button type="button" class="extended" id="bot_modificar">Agregar</button>
+            </div>     
+        </div>
+      <h1 id="establo" class="establo">Establo</h1>
+      <section>
+        <ul id="lista">
+        </ul>
+      </section>
+    </div>
+    
+  </main>
+  <script src="main.js"></script>
+</body>
+
+</html>
